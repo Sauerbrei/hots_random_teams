@@ -99,8 +99,10 @@
 						{/foreach}
 						</div>
 						<div class="row">
-							<input type="submit">
-							<button type="button" id="select_all">Alle auswählen</button>
+							<div class="text-center">
+								<button type="submit" class="submit">Generate</button>
+								<button type="button" id="select_all">Alle auswählen</button>
+							</div>
 						</div>
 				</form>
 			</div>

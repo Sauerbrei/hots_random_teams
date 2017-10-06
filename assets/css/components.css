@@ -18,52 +18,34 @@
 	width:13rem;
 }
 
-.team {
-	width: 100%;
+BUTTON {
+	background: linear-gradient(to bottom,#490095,#030099);
+	border: 2px solid #853bcf;
+	padding: 10px 30px 10px 30px;
+	text-shadow: 0 0 6px rgba(0,0,0,.75);
+	text-align: center;
 }
 
-.team.box {
-	padding: 0;
+BUTTON:hover {
+	background: linear-gradient(to bottom,#5e00c5,#0500cc);
 }
 
-.team.box.right {
-	text-align: right;
+BUTTON:active {
+	background: #030099;
 }
 
-.team.box.left {
-	text-align: left;
+BUTTON.submit {
+	background: linear-gradient(to bottom,#fa0,#f50);
+	border: 2px solid #e5ba80;
+	text-transform: uppercase;
+	font-weight: 900;
 }
 
-.team .player {
-	width: 100%;
-	font-size: 2em;
+BUTTON.submit:hover {
+	background: linear-gradient(to bottom,#f8b42f,#ff7932);
 }
 
-.team .player {
-	text-align: inherit;
-	transform: inherit;
+BUTTON.submit:active {
+	background: #ff7932;
 }
 
-.player_image {
-	width: 1.5em;
-	display: inline-block;
-}
-
-.background {
-	padding: 25px 25px 25px 150px;
-	background-size: 450px !important;
-	background-repeat: no-repeat !important;;
-	background-position-x: -50% !important;
-}
-
-.left .background {
-	-o-transform: scaleX(-1) !important;;
-	-moz-transform: scaleX(-1) !important;;
-	-webkit-transform: scaleX(-1) !important;;
-	transform: scaleX(-1) !important;;
-}
-
-.team_image {
-	width: 30px;
-	height: 30px;
-}
