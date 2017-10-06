@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Empty Title</title>
+	<title>Reaktor4 | Generate random HotS-Teams</title>
 
 	<link rel="stylesheet" href="assets/css/normalize.css" />
 	<link href="https://fonts.googleapis.com/css?family=Exo:400,600,700" rel="stylesheet">
@@ -48,19 +48,19 @@
 									<span class="thetime" id="eutime"></span>
 									<span class="thetime hidden" id="ustime"></span>
 								</div>
-								<div class="box">
-									<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>
-								</div>
+								{*<div class="box">*}
+									{*<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>*}
+								{*</div>*}
 
-								<div class="box">
-									<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>
-								</div>
-								<div class="box">
-									<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>
-								</div>
-								<div class="box">
-									<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>
-								</div>
+								{*<div class="box">*}
+									{*<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>*}
+								{*</div>*}
+								{*<div class="box">*}
+									{*<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>*}
+								{*</div>*}
+								{*<div class="box">*}
+									{*<span><img src="assets/img/ico_msg.png" class="nav_ico"/></span>*}
+								{*</div>*}
 							</div>
 						</div>
 					</div>

@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 03.10.2017
- * Time: 16:04
- */
-
 namespace Exceptions;
 
 /**

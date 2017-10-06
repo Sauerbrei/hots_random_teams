@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 18.04.2017
- * Time: 14:56
- */
-
 namespace Controller;
 
 use Doctrine\ORM\EntityManager;
@@ -14,9 +7,13 @@ use Entities\Aufgabe;
 use Entities\Player;
 use Services\MatchupService;
 
+/**
+ * Class IndexController
+ * @package Controller
+ */
 class IndexController extends ABaseController {
 
-	private $images = [1,2,3,4];
+	private $images = [1,2,3,4,5,6,7,8,9];
 
 	protected function indexAction() {
 		/** @var EntityManager $em */
@@ -28,6 +25,7 @@ class IndexController extends ABaseController {
 		;
 		$query 	= $qb->getQuery();
 		$players= $query->getResult();
+		$images = [];
 
 		$this->getTemplateengine()->assign('players', $players);
 
@@ -42,11 +40,12 @@ class IndexController extends ABaseController {
 			$matchupService = new MatchupService($matchPlayers);
 			$matchup = $matchupService->build();
 
-			$images = [];
-			for ($i=0; $i<=count($matchup->getTeams()); $i++) {
-				$randImage = array_rand($this->images);
-				$images[] = $this->images[$randImage];
-				unset($this->images[$randImage]);
+			if ($matchup instanceof MatchupService) {
+				for ($i=0; $i<=count($matchup->getTeams()); $i++) {
+					$randImage = array_rand($this->images);
+					$images[] = $this->images[$randImage];
+					unset($this->images[$randImage]);
+				}
 			}
 
 			$this->getTemplateengine()->assign('matchup', $matchup);

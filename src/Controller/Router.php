@@ -1,14 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 06.05.2017
- * Time: 14:19
- */
 
 namespace Controller;
 
-
+/**
+ * Class Router
+ * @package Controller
+ */
 class Router {
 	/**
 	 * Router constructor.

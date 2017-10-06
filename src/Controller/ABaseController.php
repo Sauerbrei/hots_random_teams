@@ -1,17 +1,13 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 20.04.2017
- * Time: 15:26
- */
-
-
 namespace Controller;
 
 use Smarty;
 
+/**
+ * Class ABaseController
+ * @package Controller
+ */
 abstract class ABaseController {
 	/**
 	 * @var string

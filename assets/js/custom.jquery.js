@@ -12,7 +12,9 @@ $(function() {
 
 	$('#select_all').click(function() {
 		$('.player_checkbox').each(function() {
-			$(this).attr('checked', true);
+			if ($(this).prop('checked') === false) {
+
+			}
 		});
 	});
 

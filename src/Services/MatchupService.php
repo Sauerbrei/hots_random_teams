@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 03.10.2017
- * Time: 15:53
- */
-
 namespace Services;
 
 use Entities\Player;
@@ -61,7 +54,9 @@ class MatchupService {
 	 */
 	public function build() {
 		if (!$this->check($this->players)) {
-			return new NotEnoughPlayerException('Not enough Players.');
+			return new NotEnoughPlayerException(
+				'You have selected ' . count($this->players) . ' players but you need ' .
+				($this::MAX_TEAMS * $this::MAX_PLAYER_PER_TEAM) . '.');
 		}
 		$playerIds = array_keys($this->players);
 		$this->selectMap();
@@ -86,7 +81,7 @@ class MatchupService {
 	/**
 	 * @param array $players
 	 */
-	public function check(array $players) {
+	public function check(array $players): bool {
 		return (count($players) >= ($this::MAX_TEAMS * $this::MAX_PLAYER_PER_TEAM));
 	}
 

@@ -1,14 +1,11 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 21.04.2017
- * Time: 08:29
- */
-
 namespace Controller;
 
+/**
+ * Class NotFoundController
+ * @package Controller
+ */
 class NotFoundController extends ABaseController {
 
 	/**

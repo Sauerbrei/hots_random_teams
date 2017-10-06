@@ -1,14 +1,11 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: PaarBreakdowns
- * Date: 01.05.2017
- * Time: 12:14
- */
-
 namespace Entities;
 
+/**
+ * Class ABaseEntity
+ * @package Entities
+ */
 abstract class ABaseEntity {
 
 	/**
@@ -30,7 +27,7 @@ abstract class ABaseEntity {
 	/**
 	 * @return array
 	 */
-	public function toArray() {
+	public function toArray(): array {
 		return get_object_vars($this);
 	}
 }
