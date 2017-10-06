@@ -1,0 +1,111 @@
+
+.container-fluid::before {
+	bottom: 0;
+	content: "";
+	filter: blur(1rem);
+	height: 150%;
+	left: 0;
+	margin: -3.5rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+.navbar, #navbar {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+.navbar {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: currentcolor currentcolor #392863;
+	border-image: none;
+	border-radius: 0;
+	border-style: none none solid;
+	border-width: medium medium 0.2rem;
+	height: 7rem;
+}
+
+.nav-height {
+	height: 7rem;
+	position: relative;
+}
+
+.nav-vertical-align {
+	position: absolute;
+	top: 15%;
+}
+.navbar-default {
+	background-color: rgba(30, 11, 50, 0.75);
+}
+
+#clock, #front_players, .navbar-default .navbar-nav > li > a {
+	color: #7d74c2;
+	font-weight: 600;
+}
+
+.navbar-header {
+	padding-right: 1.4rem;
+}
+.navbar-default .navbar-header IMG {
+	height: 95px;
+	margin-left: -1.6rem;
+	margin-top: -0.5rem;
+}
+.navbar-default .navbar-nav > li > a {
+	font-size: 3rem;
+	line-height: 4rem;
+	padding: 1.5rem 2rem;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+	background-clip: text;
+	background-image: linear-gradient(to bottom, #bebffc 20%, #7a70be 70%);
+	color: transparent;
+}
+.navbar-nav > li {
+	font-size: 3rem;
+	text-shadow: 0.1rem 0.1rem #000000;
+	text-transform: uppercase;
+}
+.navbar-nav LI:not(:first-child)::after {
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, transparent 5%, #494794 50%, transparent 95%) repeat scroll 0 0;
+	content: "";
+	height: 65%;
+	margin: 1.3rem 0;
+	position: absolute;
+	top: 0;
+	width: 0.2rem;
+}
+
+#clock.box {
+	padding: 0.7rem 3rem;
+	text-align: center;
+	vertical-align: bottom;
+}
+.thetime {
+	color: #7d74c2;
+	font-size: 1.8rem;
+}
+.nav_ico {
+	height: 32px;
+	width: 32px;
+}
+
+#front_players {
+	padding: .5rem;
+}
+
+#front_players .box {
+	margin-right: .3rem;
+	border-width: 3px;
+	box-shadow: 0 0 .8rem #1d1e1e;
+	background-color: #05050d;
+}
+
+#front_players .add_player {
+	background: rgba(0, 0, 0, 0) url("../img/add_player.png") no-repeat scroll 50% 50% / 40% auto;
+	height: 100%;
+}

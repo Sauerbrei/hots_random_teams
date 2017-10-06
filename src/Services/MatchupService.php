@@ -78,6 +78,7 @@ class MatchupService {
 				unset($playerIds[$playerId]);
 			}
 		}
+		ksort($this->matchup['teams']);
 
 		return $this;
 	}
@@ -181,7 +182,6 @@ class MatchupService {
 	 * @return array
 	 */
 	public function getMatchup(): array {
-		ksort($this->matchup);
 		return $this->matchup;
 	}
 }

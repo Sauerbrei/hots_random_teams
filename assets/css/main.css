@@ -1,0 +1,30 @@
+@import "components.css";
+@import "nav.css";
+
+html {
+	font-size: 62.5%;
+
+}
+
+html,body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-family: 'Exo', sans-serif;
+	font-size: 1.6rem;
+}
+
+body, .container-fluid::before {
+	background: url(../img/background.jpg) 0 / cover fixed;
+}
+
+main {
+	color: #fafafa;
+	font-size: 1.6rem;
+}
+
+.row {
+	margin: 0;
+}

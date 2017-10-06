@@ -16,6 +16,7 @@ use Services\MatchupService;
 
 class IndexController extends ABaseController {
 
+	private $images = [1,2,3,4];
 
 	protected function indexAction() {
 		/** @var EntityManager $em */
@@ -41,8 +42,16 @@ class IndexController extends ABaseController {
 			$matchupService = new MatchupService($matchPlayers);
 			$matchup = $matchupService->build();
 
+			$images = [];
+			for ($i=0; $i<=count($matchup->getTeams()); $i++) {
+				$randImage = array_rand($this->images);
+				$images[] = $this->images[$randImage];
+				unset($this->images[$randImage]);
+			}
+
 			$this->getTemplateengine()->assign('matchup', $matchup);
 			$this->getTemplateengine()->assign('maxTeams', $matchupService::MAX_TEAMS);
+			$this->getTemplateengine()->assign('matchImage', $images);
 		}
 	}
 }
