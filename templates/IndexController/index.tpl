@@ -2,7 +2,7 @@
 
 	<div class="row">
 		<h1>
-			Games Played: {if isset($smarty.session.games_played)}{$smarty.session.games_played}{else}0{/if}
+			<!-- Games Played: {if isset($smarty.session.games_played)}{$smarty.session.games_played}{else}0{/if}-->
 		</h1>
 	</div>
 
@@ -21,7 +21,6 @@
 						{foreach item=$roaster key=$team from=$matchup->getTeams()}
 							{if $team != 0}
 							<div class="col-sm-6">
-								<h2>Team #{$team}</h2>
 								<div class="team box {if ($team%2 === 0)}left{else}right{/if}">
 									<div class="background" style="background: url(assets/img/bg/{$matchImage[$team]}.png);">
 										{foreach item=$player from=$roaster}
