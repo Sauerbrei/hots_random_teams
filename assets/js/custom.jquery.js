@@ -11,11 +11,7 @@ $(function() {
 	setInterval(update, 1000);
 
 	$('#select_all').click(function() {
-		$('.player_checkbox').each(function() {
-			if ($(this).prop('checked') === false) {
-
-			}
-		});
+		$('.player_checkbox').prop('checked', this.checked);
 	});
 
 

@@ -18,19 +18,42 @@
 	width:13rem;
 }
 
-BUTTON {
+.checkboxbutton {
+	display: inline-block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.checkboxbutton label span {
+	text-align:center;
+	padding: 10px 30px 5px 30px;
+	display: inline-block;
+}
+
+.checkboxbutton label input {
+	display: none;
+}
+
+BUTTON, .checkboxbutton {
 	background: linear-gradient(to bottom,#490095,#030099);
 	border: 2px solid #853bcf;
-	padding: 10px 30px 10px 30px;
 	text-shadow: 0 0 6px rgba(0,0,0,.75);
 	text-align: center;
 }
 
-BUTTON:hover {
+BUTTON {
+	padding: 10px 30px 10px 30px;
+}
+
+BUTTON:hover, .checkboxbutton:hover {
 	background: linear-gradient(to bottom,#5e00c5,#0500cc);
 }
 
-BUTTON:active {
+BUTTON:active, .checkboxbutton:active {
 	background: #030099;
 }
 
