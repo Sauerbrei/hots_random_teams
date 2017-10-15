@@ -31,6 +31,7 @@ class IndexController extends ABaseController {
 
 		if (isset($_POST['matchup_players']) && !empty($_POST['matchup_players'])) {
 			$_SESSION['matchup_players'] = $_POST['matchup_players'];
+			$_SESSION['check_all'] = $_POST['check_all'];
 			$playerIds = array_keys($_POST['matchup_players']);
 			$matchPlayers = $em->getRepository(Player::class)->findBy(
 				[

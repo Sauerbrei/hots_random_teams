@@ -101,7 +101,14 @@
 						<div class="row">
 							<div class="text-center">
 								<button type="submit" class="submit">Generate</button>
-								<button type="button" id="select_all">Alle auswählen</button>
+								<div class="checkboxbutton">
+									<label>
+										<input type="checkbox" name="check_all" id="select_all"
+											{if isset($smarty.session.check_all)}checked{/if}
+										/>
+										<span>alle auswählen</span>
+									</label>
+								</div>
 							</div>
 						</div>
 				</form>
