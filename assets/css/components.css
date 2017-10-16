@@ -19,6 +19,7 @@
 }
 
 .checkboxbutton {
+	cursor: pointer;
 	display: inline-block;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -29,12 +30,14 @@
 }
 
 .checkboxbutton label span {
+	cursor: pointer;
 	text-align:center;
 	padding: 10px 30px 5px 30px;
 	display: inline-block;
 }
 
 .checkboxbutton label input {
+	cursor: pointer;
 	display: none;
 }
 
