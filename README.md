@@ -1,4 +1,11 @@
-ToDo
+# Install
+
+1. copy `.env.dist` to `.env`
+2. add your personal credentials
+
+---
+
+#ToDo
 
  - selectAll + unSelectAll Button
  - Statistiken

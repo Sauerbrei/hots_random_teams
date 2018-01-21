@@ -314,3 +314,5 @@ $RECYCLE.BIN/
 
 #Smarty
 templates_c/
+
+.env
