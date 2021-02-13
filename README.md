@@ -3,6 +3,8 @@ Builds random teams by a preselection of different members.
 
 Preview: https://sauerbrei.systems/stuff/hots/randomteams/
 
+![preview image](https://github.com/Sauerbrei/hots_random_teams/blob/master/assets/img/app_preview.png)
+
 
 ## Install
 
