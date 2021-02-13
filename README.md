@@ -1,4 +1,10 @@
-# Install
+# Heroes of the Storm Team Builder
+Builds random teams by a preselection of different members. 
+
+Preview: https://sauerbrei.systems/stuff/hots/randomteams/
+
+
+## Install
 
 1. copy `.env.dist` to `.env`
 2. add your personal credentials
